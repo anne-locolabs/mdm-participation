@@ -19,6 +19,7 @@ services:
       bundle config set deployment 'true'
       bundle config set without 'development test'
       bundle install --jobs=4 --retry=3
+      bundle binstubs bundler --force
       yarn install --frozen-lockfile
       RAILS_ENV=production bundle exec rails shakapacker:compile
       RAILS_ENV=production bundle exec rails assets:precompile
