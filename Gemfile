@@ -13,7 +13,7 @@ gem "decidim", "0.30.1"
 
 gem "bootsnap", "~> 1.3"
 
-gem "puma", ">= 6.3.1"
+gem "puma", "~> 6.5"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
