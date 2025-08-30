@@ -1,0 +1,3 @@
+"use strict";(self.webpackChunkdecidim_development_app=self.webpackChunkdecidim_development_app||[]).push([[9209],{99209:(function(u,s,a){a.r(s);var i=a(43422),t=a.n(i),l=a(25953);const n=["error","warning","information","hint"],c={"GraphQL: Validation":"validation","GraphQL: Deprecation":"deprecation","GraphQL: Syntax":"syntax"};t().registerHelper("lint","graphql",(o,r)=>{const{schema:d,validationRules:p,externalFragments:_}=r;return(0,l.VS)(o,d,p,void 0,_).map(e=>({message:e.message,severity:e.severity?n[e.severity-1]:n[0],type:e.source?c[e.source]:void 0,from:t().Pos(e.range.start.line,e.range.start.character),to:t().Pos(e.range.end.line,e.range.end.character)}))})})}]);
+
+//# sourceMappingURL=9209-6b848571781d3048328a.chunk.js.map

@@ -1,0 +1,3 @@
+(function(){var p={61715:(function(e,n,t){var s={"./decidim/sortitions/icon.svg":69863};function c(o){var i=a(o);return t(i)}function a(o){if(!t.o(s,o)){var i=new Error("Cannot find module '"+o+"'");throw i.code="MODULE_NOT_FOUND",i}return s[o]}c.keys=function(){return Object.keys(s)},c.resolve=a,e.exports=c,c.id=61715}),69863:(function(e,n,t){"use strict";e.exports=t.p+"media/images/icon-b430778003d66a91efc0.svg"})},u={};function r(e){var n=u[e];if(n!==void 0)return n.exports;var t=u[e]={exports:{}};return p[e](t,t.exports,r),t.exports}(function(){r.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)}})(),(function(){r.p="/decidim-packs/"})(),(function(){"use strict";r(61715)})()})();
+
+//# sourceMappingURL=decidim_sortitions-83272451f2c025c572bf.js.map
