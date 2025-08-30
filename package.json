@@ -1,12 +1,24 @@
 {
   "name": "decidim-development-app",
   "private": true,
+  "version": "0.1.0",
+
+
+  "engines": {
+    "node": ">=20"
+  },
+
+  "browserslist": [
+    "extends @decidim/browserslist-config"
+  ],
+
   "dependencies": {
     "@decidim/browserslist-config": "^0.30.1",
     "@decidim/core": "^0.30.1",
-    "@decidim/webpacker": "^0.30.1"
+    "@decidim/webpacker": "^0.30.1",
+    "graphql": "^16.9.0"
   },
-  "version": "0.1.0",
+  
   "devDependencies": {
     "@decidim/dev": "^0.30.1",
     "@decidim/eslint-config": "^0.30.1",
@@ -15,7 +27,11 @@
     "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1"
   },
-  "browserslist": [
-    "extends @decidim/browserslist-config"
-  ]
+
+  "resolutions": {
+    "uc.micro": "^2.1.0"
+  }
+  
 }
+
+

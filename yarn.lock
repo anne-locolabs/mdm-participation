@@ -4058,9 +4058,9 @@ date-fns@>=2:
   integrity sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==
 
 dayjs@^1.11.0:
-  version "1.11.15"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.15.tgz#fd7fd2db6fc92f08ffe4adc306756d45db00ada3"
-  integrity sha512-MC+DfnSWiM9APs7fpiurHGCoeIx0Gdl6QZBy+5lu8MbYKN5FZEXqOgrundfibdfhGZ15o9hzmZ2xJjZnbvgKXQ==
+  version "1.11.18"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.18.tgz#835fa712aac52ab9dec8b1494098774ed7070a11"
+  integrity sha512-zFBQ7WFRvVRhKcWoUh+ZA1g2HVgUbsZm9sbddh8EC5iv93sui8DVVz1Npvz+r6meo9VKfa8NyLWBsQK1VvIKPA==
 
 debounce-promise@^3.1.2:
   version "3.1.2"
@@ -5079,6 +5079,11 @@ graphql-language-service@5.5.0, graphql-language-service@^5.3.1:
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-6.0.6.tgz#e9c9ff85f4ddb5bbe6faa2721c0d27e6c11746d2"
   integrity sha512-zgfER9s+ftkGKUZgc0xbx8T7/HMO4AV5/YuYiFc+AtgcO5T0v8AxYYNQ+ltzuzDZgNkYJaFspm5MMYLjQzrkmw==
+
+graphql@^16.9.0:
+  version "16.11.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.11.0.tgz#96d17f66370678027fdf59b2d4c20b4efaa8a633"
+  integrity sha512-mS1lbMsxgQj6hge1XZ6p7GPhbrtFwUFYi3wRzXAC/FmYnyXMTvvI3td3rjmQ2u8ewXueaSvRPWaEcgVVOT9Jnw==
 
 handle-thing@^2.0.0:
   version "2.0.1"
@@ -8542,12 +8547,7 @@ typical@^5.2.0:
   resolved "https://registry.yarnpkg.com/typical/-/typical-5.2.0.tgz#4daaac4f2b5315460804f0acf6cb69c52bb93066"
   integrity sha512-dvdQgNDNJo+8B2uBQoqdb11eUCE1JQXhvjC/CZtgvZseVd5TYMXnq0+vuUemXbd/Se29cTaUuPX3YIc2xgbvIg==
 
-uc.micro@^1.0.1, uc.micro@^1.0.5:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/uc.micro/-/uc.micro-1.0.6.tgz#9c411a802a409a91fc6cf74081baba34b24499ac"
-  integrity sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
-
-uc.micro@^2.0.0, uc.micro@^2.1.0:
+uc.micro@^1.0.1, uc.micro@^1.0.5, uc.micro@^2.0.0, uc.micro@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/uc.micro/-/uc.micro-2.1.0.tgz#f8d3f7d0ec4c3dea35a7e3c8efa4cb8b45c9e7ee"
   integrity sha512-ARDJmphmdvUk6Glw7y9DQ2bFkKBHwQHLi2lsaH6PPmz/Ka9sFOBsBluozhDltWmnv9u/cF6Rt87znRTPV+yp/A==
