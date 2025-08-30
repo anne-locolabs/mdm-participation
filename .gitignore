@@ -52,3 +52,4 @@
 # Ignore Tailwind configuration
 tailwind.config.js
 /config/credentials/production.key
+/bin/bundle
