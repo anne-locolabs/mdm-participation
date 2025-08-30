@@ -20,7 +20,10 @@ services:
       bundle config set without 'development test'
       bundle install --jobs=4 --retry=3
       bundle exec rake assets:precompile
-    preDeployCommand: bundle exec rails db:prepare
+    preDeployCommand: |
+      rm -f bin/bundle
+      bundle binstubs bundler --force
+      bundle exec rails db:prepare
     startCommand: bundle exec puma -t 5:5 -p ${PORT:-3000} -e production
     envVars:
       - key: RAILS_ENV
