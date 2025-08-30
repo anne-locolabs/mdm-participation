@@ -100,4 +100,23 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Force all access to the app over SSL, use HSTS, and secure cookies.
+  config.force_ssl = true
+
+  app_host  = "decidim-web.onrender.com"
+app_proto = "https"
+
+# Make Rails accept requests for this host (behind a proxy like Render)
+config.hosts << app_host
+
+# URLs generated inside controllers/helpers
+config.action_controller.default_url_options = { host: app_host, protocol: app_proto }
+
+# URLs used in mailers
+config.action_mailer.default_url_options = { host: app_host, protocol: app_proto }
+
+# Route helpers (e.g., *_url) outside controller context
+Rails.application.routes.default_url_options[:host]     = app_host
+Rails.application.routes.default_url_options[:protocol] = app_proto  
 end
