@@ -16,14 +16,10 @@ services:
     runtime: ruby
     plan: standard
     buildCommand: >
-      bundle config set deployment 'true'
-      bundle config set without 'development test'
-      bundle install --jobs=4 --retry=3
-      bundle exec rake assets:precompile
-    preDeployCommand: |
-      rm -f bin/bundle
-      bundle binstubs bundler --force
-      bundle exec rails db:prepare
+      bundle install;
+      npm ci --no-audit --no-fund
+      RAILS_ENV=production bundle exec rails assets:precompile
+    preDeployCommand: bundle exec rails db:migrate
     startCommand: bundle exec puma -t 5:5 -p ${PORT:-3000} -e production
     envVars:
       - key: RAILS_ENV
@@ -75,7 +71,7 @@ services:
       - key: STORAGE_PROVIDER
         value: s3
       - key: AWS_REGION
-        value: "eu-north-1"          # Paris region example
+        value: "eu-west-3"          # Paris region example
       - key: AWS_ACCESS_KEY_ID
         sync: false
       - key: AWS_SECRET_ACCESS_KEY
