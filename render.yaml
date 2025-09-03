@@ -15,9 +15,7 @@ services:
     name: decidim-web
     runtime: ruby
     plan: standard
-    buildCommand: >
-      bundle install
-      bundle exec rake assets:precompile
+    buildCommand:  ./bin/render-build.sh
     preDeployCommand: bundle exec rails db:migrate
     startCommand: bundle exec puma -C config/puma.rb
     envVars:
