@@ -22,7 +22,7 @@ services:
       yarn install --frozen-lockfile
       RAILS_ENV=production bundle exec rails shakapacker:compile
       RAILS_ENV=production bundle exec rails assets:precompile
-    preDeployCommand: bundle exec rails db:prepare
+    preDeployCommand: bundle exec rails db:migrate
     startCommand: bundle exec puma -t 5:5 -p ${PORT:-3000} -e production
     envVars:
       - key: RAILS_ENV
